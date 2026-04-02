@@ -1,0 +1,68 @@
+#box {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h2::after {
+    content: "Cinza";
+}
+
+
+@media (max-width: 420px) {
+    #box {
+        background-color: gray;
+    }
+
+    h2::after {
+        content: "Cinza";
+    }
+}
+
+
+@media (min-width: 421px) and (max-width: 768px) {
+    #box {
+        background-color: orange;
+    }
+
+    h2::after {
+        content: "Laranja";
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #box {
+        background-color: pink;
+    }
+
+    h2::after {
+        content: "Rosa";
+    }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+    #box {
+        background-color: purple;
+    }
+
+    h2::after {
+        content: "Roxo";
+    }
+}
+
+
+@media (min-width: 1921px) {
+    #box {
+        background-color: green;
+    }
+
+    h2::after {
+        content: "Verde";
+    }
+}
